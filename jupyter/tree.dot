@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<petal_width &le; 0.75<br/>entropy = 1.5813<br/>samples = 120<br/>value = [42, 42, 36]<br/>class = Iris-setosa>, fillcolor="#e5813900"] ;
+1 [label=<entropy = 0.0<br/>samples = 42<br/>value = [42, 0, 0]<br/>class = Iris-setosa>, fillcolor="#e58139ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<petal_width &le; 1.75<br/>entropy = 0.9957<br/>samples = 78<br/>value = [0, 42, 36]<br/>class = Iris-versicolor>, fillcolor="#39e58124"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<petal_length &le; 4.95<br/>entropy = 0.4328<br/>samples = 45<br/>value = [0, 41, 4]<br/>class = Iris-versicolor>, fillcolor="#39e581e6"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.1687<br/>samples = 40<br/>value = [0, 39, 1]<br/>class = Iris-versicolor>, fillcolor="#39e581f8"] ;
+3 -> 4 ;
+5 [label=<entropy = 0.971<br/>samples = 5<br/>value = [0, 2, 3]<br/>class = Iris-virginica>, fillcolor="#8139e555"] ;
+3 -> 5 ;
+6 [label=<petal_length &le; 4.85<br/>entropy = 0.1959<br/>samples = 33<br/>value = [0, 1, 32]<br/>class = Iris-virginica>, fillcolor="#8139e5f7"] ;
+2 -> 6 ;
+7 [label=<entropy = 1.0<br/>samples = 2<br/>value = [0, 1, 1]<br/>class = Iris-versicolor>, fillcolor="#39e58100"] ;
+6 -> 7 ;
+8 [label=<entropy = 0.0<br/>samples = 31<br/>value = [0, 0, 31]<br/>class = Iris-virginica>, fillcolor="#8139e5ff"] ;
+6 -> 8 ;
+}
