@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="petal_width <= 0.8\nentropy = 1.5838\nsamples = 120\nvalue = [42, 38, 40]\nclass = Iris-versicolor", fillcolor="#e5813906"] ;
+1 [label="entropy = 0.0\nsamples = 42\nvalue = [42, 0, 0]\nclass = Iris-versicolor", fillcolor="#e58139ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal_width <= 1.75\nentropy = 0.9995\nsamples = 78\nvalue = [0, 38, 40]\nclass = Iris-virginica", fillcolor="#8139e50d"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal_length <= 4.95\nentropy = 0.5108\nsamples = 44\nvalue = [0, 5, 39]\nclass = Iris-virginica", fillcolor="#8139e5de"] ;
+2 -> 3 ;
+4 [label="petal_width <= 1.65\nentropy = 0.1756\nsamples = 38\nvalue = [0, 1, 37]\nclass = Iris-virginica", fillcolor="#8139e5f8"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 37\nvalue = [0, 0, 37]\nclass = Iris-virginica", fillcolor="#8139e5ff"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = Iris-setosa", fillcolor="#39e581ff"] ;
+4 -> 6 ;
+7 [label="petal_width <= 1.55\nentropy = 0.9183\nsamples = 6\nvalue = [0, 4, 2]\nclass = Iris-setosa", fillcolor="#39e5817f"] ;
+3 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 3, 0]\nclass = Iris-setosa", fillcolor="#39e581ff"] ;
+7 -> 8 ;
+9 [label="entropy = 0.9183\nsamples = 3\nvalue = [0, 1, 2]\nclass = Iris-virginica", fillcolor="#8139e57f"] ;
+7 -> 9 ;
+10 [label="petal_length <= 4.85\nentropy = 0.1914\nsamples = 34\nvalue = [0, 33, 1]\nclass = Iris-setosa", fillcolor="#39e581f7"] ;
+2 -> 10 ;
+11 [label="entropy = 1.0\nsamples = 2\nvalue = [0, 1, 1]\nclass = Iris-setosa", fillcolor="#39e58100"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 32\nvalue = [0, 32, 0]\nclass = Iris-setosa", fillcolor="#39e581ff"] ;
+10 -> 12 ;
+}
